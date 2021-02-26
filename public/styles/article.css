@@ -79,6 +79,12 @@
                 background-color: #ffe48f;
             }
             
+            @media screen and (min-width: 1000px) {
+                .article {
+                    width: 55%;
+                }
+            }
+            
             @media screen and (min-width: 1500px) {
                 .article {
                     width: 45%;
