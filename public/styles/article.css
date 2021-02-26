@@ -80,6 +80,12 @@
             }
             
             @media screen and (min-width: 1000px) {
+                article {
+                    width: 60%;
+                }
+            }
+            
+            @media screen and (min-width: 1500px) {
                 .article {
                     width: 45%;
                     font-size: 15px;
