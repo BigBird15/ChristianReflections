@@ -1,0 +1,93 @@
+            .article {
+                width: 80%;
+                margin: auto;
+                line-height: 1.6em;
+                font-size: 13px;
+            }
+            
+            .article__heading {
+                font-weight: normal;
+                line-height: 1em;
+            }
+            
+            .article__subheading {
+                font-weight: bold;
+            }
+            
+            .article__passage {
+                font-weight: bold
+            }
+            
+            .article__accent {
+                font-style: italic;
+            }
+            
+            .article__stars {
+                text-align: center;
+            }
+            
+            .article__remark {
+                font-style: italic;
+                opacity: .8;
+                font-size: 0.9em;
+            }
+            
+            .article__subnote {
+                text-align: center;
+                font-size: 0.8em;
+            }
+            
+            .picture {
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+            }
+            
+            .article__epigraph {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 0.8em;
+                font-style: italic;
+            }
+            
+            .article__epigraph-author {
+                display: block;
+                text-align: right;
+            }
+            
+            .article__epigraph-text {
+                line-height: 1.1em;
+            }
+            
+            .article>p {
+                margin-bottom: 40px;
+            }
+            
+            .article__ref {
+                word-spacing: 0.2em;
+            }
+            
+            .article__ref:link,
+            .article__ref:active,
+            .article__ref:visited {
+                text-decoration: none;
+                color: black;
+                box-shadow: inset 0 -8px 2px -2px #ffe48f;
+            }
+            
+            .article__ref:hover {
+                background-color: #ffe48f;
+            }
+            
+            @media screen and (min-width: 1000px) {
+                .article {
+                    width: 45%;
+                    font-size: 15px;
+                }
+                .article>p {
+                    margin-bottom: 30px;
+                }
+                .picture {
+                    width: 45%;
+                }
+            }

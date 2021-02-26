@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Об авторе</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/general.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script defer src='scripts/toggleAbout.js'></script>
+</head>
+
+<body>
+    {{> header}}
+    <main>
+        <article class="info">
+            <img class="info__picture" src="images/author.png"
+                alt="улыбающийся мужчина в очках и теплой куртке на фоне сосны">
+            <section class="info__text">
+                <p>Здравствуй!</p>
+                <p>На этом сайте я публикую свои статьи - иногда о политике, иногда о религии. <br><br>
+                    Я родился в 1950
+                    г, закончил 8 классов, в вечерней школе получил среднее образование, и уже существенно позже, в
+                    2017, окончил Московский Теологический университет. <br>
+                    Уже почти 30 лет являюсь прихожанином протестанстской церкви, часто проповедую.<br>
+                    На этом сайте я публикую свои статьи - иногда о политике, иногда о религии. <br><br>
+                    <br>
+
+                    <span class="info__signature">Ткалич П.С.</span>
+                </p>
+            </section>
+        </article>
+    </main>
+    {{> footer}}
+</body>
+
+</html>

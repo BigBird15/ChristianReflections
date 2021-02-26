@@ -1,0 +1,73 @@
+.header {
+    word-spacing: 0.2em;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    line-height: 1em;
+    padding: 20px 20px;
+}
+
+.header__about,
+.header__articles {
+    display: block;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 2px;
+}
+
+.header__about:visited,
+.header__articles:visited,
+.header__about:active,
+.header__articles:active,
+.header__about:link,
+.header__articles:link {
+    color: black
+}
+
+.contact {
+    font-size: 17px;
+    position: fixed;
+    top: 10%;
+    right: 30px;
+    transform-origin: right;
+    transform: rotate(-90deg);
+    color: gray;
+    display: none;
+}
+
+.contact:hover {
+    transition: transform 0.5s;
+    transform: rotate(-90deg) translateX(10px);
+}
+
+.contact>a:link,
+.contact>a:active,
+.contact>a:visited {
+    text-decoration: none;
+    color: gray
+}
+
+.decoration {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #ffe48f;
+    transform: rotate(17deg);
+    top: -350px;
+    right: -400px;
+    z-index: -1;
+    opacity: .6;
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        padding: 20px 100px;
+        justify-content: flex-end
+    }
+    .contact {
+        display: block;
+    }
+}

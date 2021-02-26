@@ -1,0 +1,43 @@
+.info {
+    padding-top: 20px;
+    margin: auto;
+    width: 90%
+}
+
+.info__text {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 30px;
+    width: 90%;
+    font-size: 15px;
+}
+
+.info__picture {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.info__signature {
+    text-align: right;
+    font-style: italic;
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .info {
+        width: 60%;
+        padding-top: 100px;
+    }
+    .info__text {
+        padding-left: 20px;
+        width: 50%;
+    }
+    .info__picture {
+        width: 40%;
+        display: inline-block;
+        border-top: solid 8px #ffe48f;
+        border-right: solid 8px #ffe48f;
+    }
+}

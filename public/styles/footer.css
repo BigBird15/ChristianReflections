@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-family: "Exo";
+    font-weight: 500;
+    font-size: 20px;
+    height: 150px;
+    color: white;
+    width: 100%;
+    background-color: #1D1D1D;
+    margin: 0;
+    overflow: hidden
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links>li {
+    vertical-align: middle;
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+.links__mail:link,
+.links__mail:visited,
+.links__mail:active,
+.links__facebook:link,
+.links__facebook:visited,
+.links__facebook:active {
+    text-decoration: none;
+    color: white
+}
+
+@media screen and (min-width: 1000px) {
+    .links>li:not(:first-child) {
+        list-style-type: disc;
+    }
+    .links>li {
+        padding-right: 30px;
+    }
+    .links {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,114 @@
+main {
+    word-spacing: 0.2em;
+    margin: auto;
+    width: 80%;
+    font-size: 13px;
+}
+
+.intro {
+    padding: 20px 20px 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.intro__logo {
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1em;
+    margin-top: 20px;
+}
+
+.diary {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.diary__title,
+.articles__title,
+.diary-chosen__title {
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.diary__list li,
+.articles__list li,
+.diary-chosen li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.diary__list {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+.articles,
+.diary-chosen {
+    padding-bottom: 20px;
+}
+
+.articles__list,
+.diary-chosen__list {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles__list a:hover,
+.diary__list a:hover,
+.diary-chosen__list a:hover {
+    background-color: #ffe48f;
+}
+
+.articles__list a:link,
+.articles__list a:active,
+.articles__list a:visited,
+.diary-chosen__list a:link,
+.diary-chosen__list a:active,
+.diary-chosen__list a:visited,
+.diary__list a:link,
+.diary__list a:active,
+.diary__list a:visited {
+    text-decoration: none;
+    color: black;
+    box-shadow: inset 0 -8px 2px -2px #ffe48f;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        font-size: 15px;
+    }
+    .diary__list {
+        justify-content: space-evenly;
+    }
+    .articles__list li,
+    .diary-chosen__list li {
+        padding-bottom: 0;
+    }
+    .intro {
+        max-width: 50%;
+    }
+    .intro__logo {
+        font-size: 4em;
+    }
+    .diary {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .articles {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .diary {
+        margin-left: 200px;
+        padding-top: 0
+    }
+    .intro {
+        max-width: 30%;
+    }
+}
